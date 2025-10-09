@@ -5,11 +5,10 @@
   "description": "CRUD de médico considerando os seguinte atributos: CRM (valor único), nome, especialidade. Vai ser preciso criar uma lista de médicos, assim como fizemos com usuários.",
   "main": "src/index.js",
   "scripts": {
-  "build": "tsc",
-  "start": "ts-node src/index.ts",
-  "dev": "nodemon src/index.ts"
-},
-
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "dev": "tsx watch src/index.ts"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AgamedesR/CRUD-Medico.TS.git"
@@ -22,9 +21,19 @@
   },
   "homepage": "https://github.com/AgamedesR/CRUD-Medico.TS#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "@prisma/client": "^6.17.0",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "prisma": "^6.17.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^4.1.12"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/express": "^5.0.3",
     "@types/node": "^24.4.0",
     "nodemon": "^3.1.10",
